@@ -9,10 +9,10 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Personal Website"
+title                    : "Machine Learning PhD Candidate at Georgia Tech"
 title_separator          : "-"
 name                     : &name "Hanyang Jiang"
-description              : &description "PhD Candidate in Machine Learning"
+description              : &description "Hanyang Jiang is a Ph.D. candidate in machine learning at Georgia Tech, advised by Professor Yao Xie. Research interests include machine learning, diffusion large language models, uncertainty quantification, and reinforcement learning."
 url                      : https://scotthanyang.github.io # the base hostname & protocol for your site e.g. "https://scottjhy.github.io" or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "scotthanyang.github.io"
@@ -25,10 +25,10 @@ author:
   avatar            : "assets/images/profile.png" # Make sure to upload your photo to this path
   name              : "Hanyang Jiang"
   pronouns          : # example: "she/her"  
-  bio               : "PhD Candidate in Machine Learning."
+  bio               : "Ph.D. candidate in machine learning at Georgia Tech."
   location          : "Atlanta, GA"
   employer          : "Georgia Institute of Technology"
-  uri               : # URL
+  uri               : "https://scotthanyang.github.io/"
   email             : "scottjhy@gatech.edu"
 
   # Academic websites
@@ -140,13 +140,17 @@ facebook:
   app_id                :
   publisher             :
 og_image                : # Social media default site image
-og_description          : # Social media default site image description
+og_description          : "Hanyang Jiang is a Ph.D. candidate in machine learning at Georgia Tech, advised by Professor Yao Xie. Research interests include machine learning, diffusion large language models, uncertainty quantification, and reinforcement learning."
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                  : # Person or Organization (defaults to Person)
-  name                  : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                  : Person
+  name                  : "Hanyang Jiang"
+  links:
+    - "https://scotthanyang.github.io/"
+    - "https://github.com/scotthanyang"
+    - "https://scholar.google.com/citations?user=_jpI9zEAAAAJ&hl=en"
+    - "https://www.linkedin.com/in/hanyang-jiang-97802319b"
 
 
 # Analytics
@@ -188,6 +192,21 @@ exclude:
   - README
   - tmp
   - vendor
+
+  # Unused AcademicPages template/demo artifacts; keep them out of the published site and sitemap.
+  - markdown_generator
+  - talkmap
+  - talkmap.html
+  - talkmap.ipynb
+  - talkmap.py
+  - talkmap_out.ipynb
+  - files/paper1.pdf
+  - files/paper2.pdf
+  - files/paper3.pdf
+  - files/slides1.pdf
+  - files/slides2.pdf
+  - files/slides3.pdf
+  - files/bibtex1.bib
 keep_files:
   - .git
   - .svn
